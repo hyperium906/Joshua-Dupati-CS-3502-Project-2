@@ -20,13 +20,15 @@ Each scheduling algorithm is tested on a sample workload and results are printed
 
 ---
 
-#Implemented Algorithms
-FCFS (First Come First Serve)- Processes are scheduled in the order they arrive. 
-SRTF(Shortest Remaining Time First) - choosing the job with the least remaining burst time. 
-Priority Preemptive - Always runs the process with the lowest priority value. Preemptive. 
-Round Robin (RR) -  Each process gets a fixed time slice (quantum) to execute in cyclic order. 
-HRRN(Highest Response Ratio Next) - Non-preemptive algorithm choosing the process with the highest response ratio. 
-MLFQ (Multilevel Feedback Queue) | Processes are scheduled across multiple queues with different priorities and quantums, dynamically adjusting based on behavior. |
+
+## Implemented Algorithms
+
+- **FCFS (First Come First Serve):** Processes are scheduled in the order they arrive.
+- **SRTF (Shortest Remaining Time First):** Preemptive algorithm that selects the job with the least remaining burst time.
+- **Priority Preemptive (PP):** Always runs the process with the highest priority (lowest priority value). Preemptive.
+- **Round Robin (RR):** Each process gets a fixed time slice (quantum) to execute in cyclic order.
+- **HRRN (Highest Response Ratio Next):** Non-preemptive algorithm that selects the process with the highest response ratio.
+- **MLFQ (Multilevel Feedback Queue):** Processes are scheduled across multiple queues with different priorities and quantum levels, dynamically adjusting based on behavior.
 
 ## How to Run
 1. Compile the program:
